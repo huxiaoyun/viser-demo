@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试vue-echarts功能</title>
+</head>
+
+
+<body>
+    <div id="app">
+        <v-chart :force-fit="true" :height="height" :data="dataG2" :scale="scale">
+            <v-axis data-key="year"></v-axis>
+            <v-tooltip></v-tooltip>
+            <v-line position="year*value" ></v-line>
+            <v-point position="year*value" shape="circle" ></v-point>
+        </v-chart>
+    </div>
+    <div id="test"></div>
+</body>
+<script defer async src="./lib/require.js" data-main="main.js"></script>
+
+</html>
